@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/style.css" type="text/css" media="screen" charset="utf-8">
+    <meta name="google-site-verification" content="Jknoaf3CvRzba3wXMxqgurDErIGZ9e1L1luuDMhQYEI">
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Not Found | Ruby on Rails</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Not Found" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern." />
+<meta property="og:description" content="A web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern." />
+<link rel="canonical" href="https://rubyonrails.org/404.html" />
+<meta property="og:url" content="https://rubyonrails.org/404.html" />
+<meta property="og:site_name" content="Ruby on Rails" />
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/4223" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://avatars.githubusercontent.com/u/4223" />
+<meta property="twitter:title" content="Not Found" />
+<meta name="twitter:site" content="@rails" />
+<script type="application/ld+json">
+{"image":"https://avatars.githubusercontent.com/u/4223","@type":"WebPage","headline":"Not Found","url":"https://rubyonrails.org/404.html","description":"A web-application framework that includes everything needed to create database-backed web applications according to the Model-View-Controller (MVC) pattern.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+  <a href="/">
+    <img src="/images/rails-logo.svg" width="130" height="46" alt="Ruby on Rails">
+  </a>
+</div>
+
+<section>
+  <h1 style="text-align: center">You’ve gone off the Rails!</h1>
+</section>
+
+
+<section>
+  <p class="back">
+    <a href="/">&larr; Back to homepage</a>
+  </p>
+</section>
+
+    </div> <!-- /.container -->
+  </body>
+</html>
