@@ -12,3 +12,8 @@ vasya:
   name: Vasya Pupkin
   email: vasya@pup.kin
   password_digest: <%= User.digest('password') %>
+
+petya:
+  name: Petya Ptichkin
+  email: pe@tya.pt
+  password_digest: <%= User.digest('password') %>
