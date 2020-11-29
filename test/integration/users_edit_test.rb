@@ -12,4 +12,18 @@ class UsersEditTest < ActionDispatch::IntegrationTest
                                               password_confirmation: "bar" } }
     assert_template 'users/edit'
   end
+
+  test "succsessful edit" do
+    get edit_user_path(id: @user.id)
+    assert_template 'users/edit'
+    name = "Misha Ptichkin"
+    email = "mi@sha.pt"
+    patch user_path(@user), params: { user: { name: name, email: email, password: "",
+                                              password_confirmation: "" } }
+    assert_not flash.empty?
+    assert_redirected_to @user
+    @user.reload
+    assert_equal name, @user.name
+    assert_equal email, @user.email
+  end
 end

@@ -6,7 +6,10 @@ class User < ApplicationRecord
     validates :email, presence: true, length: { maximum: 255 }, format: { with: URI::MailTo::EMAIL_REGEXP },
                 uniqueness: { case_sensitive: false }
     has_secure_password
-    validates :password, presence: true, length: { minimum: 8 }
+    # Тут я вообще сломал себе голову, а потом придумал. Можем позволить себе пустой пароль
+    # (для редактирования). При создании же новых пользователей пустой пароль не пройдёт
+    # за счёт проверки в has_secure_password
+    validates :password, presence: true, length: { minimum: 8 }, allow_nil: true
 
     # Returns digest of the string
     def User.digest(string)
