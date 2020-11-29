@@ -12,6 +12,7 @@ vasya:
   name: Vasya Pupkin
   email: vasya@pup.kin
   password_digest: <%= User.digest('password') %>
+  admin: true
 
 petya:
   name: Petya Ptichkin
