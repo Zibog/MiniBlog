@@ -17,3 +17,21 @@ petya:
   name: Petya Ptichkin
   email: pe@tya.pt
   password_digest: <%= User.digest('password') %>
+
+kurt:
+  name: Kurt Cobain
+  email: kurt@cobain.com
+  password_digest: <%= User.digest('password') %>
+
+james:
+  name: James Hetfield
+  email: james@hetfield.com
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  name: <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>
+  
