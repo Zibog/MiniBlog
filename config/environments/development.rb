@@ -36,8 +36,6 @@ Rails.application.configure do
 
   host = 'localhost:3000'
   config.action_mailer.default_url_options = { host: host, protocol: 'http' }
-  #config.action_mailer.default_url_options = { host: "localhost:3000" }
-  #Rails.application.routes.default_url_options[:host] = 'localhost:3000'
 
   config.action_mailer.perform_caching = false
 
