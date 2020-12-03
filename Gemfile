@@ -32,8 +32,6 @@ gem 'coffee-rails',            '>= 4.1.0'
 gem 'jquery-rails',            '>= 4.0.3'
 gem 'sdoc',                    '>= 0.4.0', group: :doc
 
-gem 'sendgrid-ruby'
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

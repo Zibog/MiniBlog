@@ -66,16 +66,15 @@ Rails.application.configure do
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  host = 'secret-headland-76850.herokuapp.com'
+  host = 'https://secret-headland-76850.herokuapp.com/'
   config.action_mailer.default_url_options = { host: host }
-  config.action_mailer.smtp_settings = {
+  ActionMailer::Base.smtp_settings = {
+    :address => 'smtp.sendgrid.com',
+    :port => '587',
+    :authentication => :plain,
     :user_name => ENV['SENDGRID_USERNAME'],
     :password => ENV['SENDGRID_PASSWORD'],
     :domain => 'heroku.com',
-    :address => 'smtp.sendgrid.com',
-    :port => 587,
-    :authentication => :plain,
     :enable_starttls_auto => true
   }
 
