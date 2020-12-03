@@ -1,7 +1,7 @@
 <h1>MiniBlog</h1>
 
 <p>
-  Welcome to the MiniBlog! Click on the link below to activate your account:
+  Welcome to the MiniBlog! Click on the link below to activateyour account:
 </p>
 
 <%= link_to "Activate", edit_account_activation_url(@user.activation_token, email:@user.email) %>
