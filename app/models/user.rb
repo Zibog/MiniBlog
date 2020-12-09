@@ -13,6 +13,8 @@ class User < ApplicationRecord
     # за счёт проверки в has_secure_password
     validates :password, presence: true, length: { minimum: 8 }, allow_nil: true
 
+    has_many :posts, dependent: :destroy
+
     # Returns digest of the string
     def User.digest(string)
         cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST : BCrypt::Engine.cost
@@ -37,6 +39,11 @@ class User < ApplicationRecord
     # Forgets the user
     def forget
         update_attribute(:remember_digest, nil)
+    end
+
+    # Defines a feed
+    def feed
+        Post.where("user_id = ?", id)
     end
 
     private

@@ -20,10 +20,10 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+gem 'active_storage_validations', '0.8.9'
 gem 'faker',                   '>= 1.4.2'
 gem 'carrierwave',             '>= 0.10.0'
 gem 'mini_magick',             '>= 3.8.0'
-gem 'fog',                     '>= 1.36.0'
 gem 'will_paginate',           '>= 3.0.7'
 gem 'bootstrap-will_paginate', '>= 0.0.10'
 gem 'bootstrap-sass',          '>= 3.2.0.0'
@@ -33,7 +33,7 @@ gem 'jquery-rails',            '>= 4.0.3'
 gem 'sdoc',                    '>= 0.4.0', group: :doc
 
 # Use Active Storage variant
-git # gem 'image_processing', '~> 1.2'
+gem 'image_processing', '1.9.3'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -72,4 +72,4 @@ group :production do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
