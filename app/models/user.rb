@@ -41,6 +41,11 @@ class User < ApplicationRecord
         update_attribute(:remember_digest, nil)
     end
 
+    # Defines a feed
+    def feed
+        Post.where("user_id = ?", id)
+    end
+
     private
 
     # Converts email to downcase
