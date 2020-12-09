@@ -13,7 +13,7 @@ class User < ApplicationRecord
     # за счёт проверки в has_secure_password
     validates :password, presence: true, length: { minimum: 8 }, allow_nil: true
 
-    has_many :posts
+    has_many :posts, dependent: :destroy
 
     # Returns digest of the string
     def User.digest(string)

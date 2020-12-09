@@ -24,4 +24,8 @@ class PostTest < ActiveSupport::TestCase
     @post.content = "r" * 257
     assert_not @post.valid?
   end
+
+  test "order should be recent first" do
+    assert_equal posts(:most_recent), Post.first
+  end
 end
