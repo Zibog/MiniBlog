@@ -33,7 +33,7 @@ gem 'jquery-rails',            '>= 4.0.3'
 gem 'sdoc',                    '>= 0.4.0', group: :doc
 
 # Use Active Storage variant
-# gem 'image_processing', '~> 1.2'
+git # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
