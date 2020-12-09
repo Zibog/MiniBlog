@@ -19,3 +19,10 @@ most_recent:
   content: "Most recent post"
   created_at: <%= Time.zone.now %>
   user: vasya
+
+<% 30.times do |n| %>
+post_<%= n %>:
+  content: <%= Faker::Lorem.sentence(word_count: 5) %>
+  created_at: <%= 1.day.ago %>
+  user: vasya
+<% end %>
