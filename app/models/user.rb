@@ -14,7 +14,7 @@ class User < ApplicationRecord
     validates :password, presence: true, length: { minimum: 8 }, allow_nil: true
 
     has_many :posts, dependent: :destroy
-    has_many :active_relationships, class_name: "Realtionship", foreign_key: "follower_id",
+    has_many :active_relationships, class_name: "Relationship", foreign_key: "follower_id",
              dependent: :destroy
 
     # Returns digest of the string
@@ -23,7 +23,7 @@ class User < ApplicationRecord
         BCrypt::Password.create(string, cost: cost)
     end
 
-    # Returs random token
+    # Returns random token
     def User.new_token
         SecureRandom.urlsafe_base64
     end
