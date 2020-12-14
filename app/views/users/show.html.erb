@@ -7,10 +7,10 @@
                 <%= @user.name %>
             </h1>
         </section>
+      <%= render 'follow_form' if logged_in? %>
       <section class="stats">
         <%= render 'shared/stats' %>
       </section>
-      <%= render 'follow_form' if logged_in? %>
     </aside>
   <div class="col-md-8">
     <% if @user.posts.any? %>
