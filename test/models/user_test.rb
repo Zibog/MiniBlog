@@ -81,6 +81,7 @@ class UserTest < ActiveSupport::TestCase
     assert_not vasya.following?(petya)
     vasya.follow(petya)
     assert vasya.following?(petya)
+    assert petya.followers.include?(vasya)
     vasya.unfollow(petya)
     assert_not vasya.following?(petya)
   end
