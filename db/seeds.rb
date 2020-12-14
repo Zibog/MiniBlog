@@ -27,3 +27,11 @@ users = User.order(:created_at).take(5)
   content = Faker::Lorem.sentence(word_count: 5)
   users.each { |user| user.posts.create!(content: content) }
 end
+
+# Create relationships
+users = User.all
+user = users.first
+following = users[2..50]
+followers = users[3..40]
+following.each { |f| user.follow(f) }
+followers.each { |f| f.follow(user) }
